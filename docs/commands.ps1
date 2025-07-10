@@ -1,0 +1,1 @@
+ssh root@redzone.link 'mysqldump --all-databases --set-gtid-purged=OFF --default-character-set=utf8' > "all_dump.$(Get-Date -Format 'yyyy-MM-dd').sql"

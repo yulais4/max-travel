@@ -1,0 +1,11 @@
+#topbar{
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    gap: 6px;
+    margin-left: 50%;
+    position: absolute;
+    top: 4%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}

@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #map {
+    height: 1080px;
+  }
+  
+  #popup_latlng {
+    font-weight: bold;
+    color: #3c3744;
+  }
+  
+  #input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .context-menu {
+    position: absolute;
+    display: none;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 280px;
+    border-radius: 16px;
+    padding: 16px;
+  }
+  
+  .coordinates_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+  
+  .label_header {
+    font-weight: bold;
+    color: #3c3744;
+  }
+  
+  .text_field {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    resize: none;
+  }
+  
+  .text_field:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .send_button_container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .send_button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .send_button:hover {
+    background-color: #3399ff;
+  }

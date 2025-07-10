@@ -1,0 +1,20 @@
+#search-form {
+    align-items: center;
+    background-color: var(--md-sys-color-surface);
+    border-radius: 16px 16px 16px 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    color: var(--md-sys-color-on-surface);
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    margin: auto;
+    transform: translateX(-50%);
+    transition: top 0.3s ease-in-out;
+    top: 4%;
+    place-items: center;
+    position: absolute;
+    z-index: 100;
+
+    width: 100%;
+    max-width: 720px;
+}

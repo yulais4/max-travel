@@ -1,0 +1,233 @@
+:root {
+    --md-sys-color-primary: #8b5e3c; /* Тёплый коричневый */
+    --md-sys-color-on-primary: #FFFFFF; /* Белый текст */
+    --md-sys-color-primary-container: #D7BFA7; /* Светлый песочный */
+    --md-sys-color-on-primary-container: #3D2A1A; /* Тёмный коричневый */
+
+    --md-sys-color-secondary: #A67C52; /* Светлый ореховый */
+    --md-sys-color-on-secondary: #FFFFFF;
+    --md-sys-color-secondary-container: #F2E0C9; /* Молочный */
+    --md-sys-color-on-secondary-container: #4E3825;
+
+    --md-sys-color-tertiary: #B6895F; /* Карамельный */
+    --md-sys-color-on-tertiary: #FFFFFF;
+    --md-sys-color-tertiary-container: #F3DFC7; /* Светлый беж */
+    --md-sys-color-on-tertiary-container: #5A3B25;
+
+    --md-sys-color-background: #F8F3EE; /* Тёплый белый */
+    --md-sys-color-on-background: #3E2C21; /* Глубокий коричневый */
+
+    --md-sys-color-surface: #EFE7E1; /* Бежево-молочный */
+    --md-sys-color-on-surface: #4B3728; /* Тёмно-коричневый */
+
+    --md-sys-color-outline: #A68A72; /* Светло-коричневый */
+}
+
+/* Поля ввода даты */
+#date-for, #date-to {
+    background-color: var(--md-sys-color-primary-container);
+    color: var(--md-sys-color-on-primary-container);
+    border: 2px;
+    border-radius: 8px;
+    padding: 6px;
+    width: 60%;
+}
+
+#map {
+    height: 100vh;
+    margin: 0;
+    z-index: 0;
+}
+
+
+/* Основные кнопки (Применить и Reset) */
+.action-buttons {
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.comment {
+    border-bottom: solid;
+}
+
+.comment h6 {
+    margin-bottom: 2px;
+}
+
+.filters {
+    align-items: center;
+    background-color: var(--md-sys-color-surface);
+    border-radius: 16px 16px 16px 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    color: var(--md-sys-color-on-surface);
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    margin: auto;
+    transform: translateX(-50%);
+    transition: top 0.3s ease-in-out;
+    top: 4%;
+    place-items: center;
+    position: absolute !important;
+    width: auto;
+    z-index: 100;
+}
+.filters form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование элементов формы по центру */
+    gap: 4px;
+}
+  
+
+/* Кнопки выбора времени */
+.filter-buttons {
+    flex-wrap: wrap;
+    gap: 4px;
+    justify-content: center;
+}
+
+
+/* Перемещаем кнопки масштаба вправо и по центру */
+.leaflet-control-zoom {
+    position: absolute !important;
+    top: 250px;
+    right: 3px; /* Отступ от правого края */
+    transform: translateY(-50%); /* Смещаем вверх на половину высоты */
+    z-index: 100;
+}
+
+.menu-about{
+    align-content: center;
+    background-color: var(--md-sys-color-surface);
+    border-radius: 16px 16px 16px 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    color: var(--md-sys-color-on-surface);
+    height: auto;
+    left: 50%;
+    margin: auto;
+    transform: translateX(-50%);
+    top: 4%;
+    position: absolute !important;
+    width: auto;
+    z-index: 100;
+    font-size: 1rem;
+}
+
+/* Poup */
+.leaflet-popup-content-wrapper {
+    align-content: center;
+    background-color: var(--md-sys-color-surface);
+    border-radius: 16px 16px 16px 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    color: var(--md-sys-color-on-surface);
+    font-size: 1rem;
+    height: auto;
+    max-height: 80vh;
+    width: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+}
+
+.navbar {
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.new-tag-form {
+    align-items: center;
+    background-color: var(--md-sys-color-surface); /* Бежево-молочный фон */
+    border-radius: 16px 16px 16px 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: var(--md-sys-color-on-surface); /* Тёмный текст */
+    display: none;
+    z-index: 1000;
+
+    /* Адаптация для маленьких экранов */
+    position: fixed;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+}
+
+
+/* Заголовок формы */
+.new-tag-form legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--md-sys-color-on-surface);
+    margin-bottom: 10px;
+}
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    gap: 6px;
+}
+
+.row-absolute {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    gap: 6px;
+
+}
+
+.topbar{
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    gap: 6px;
+    margin-left: 50%;
+    position: absolute;
+    top: 4%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+/* Кнопки на мобильных */
+@media (max-width: 480px) {
+    .row {
+        flex-direction: column; /* Кнопки в колонку */
+        gap: 4px;
+        max-width: 95%;
+    }
+}
+
+/* Поля ввода */
+md-filled-text-field {
+    --md-filled-text-field-container-color: var(--md-sys-color-primary-container);
+    --md-filled-text-field-input-text-color: var(--md-sys-color-on-primary-container);
+    --md-filled-text-field-label-text-color: var(--md-sys-color-primary);
+    --md-filled-text-field-focus-label-text-color: var(--md-sys-color-primary);
+    --md-filled-text-field-active-indicator-color: var(--md-sys-color-primary);
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+
+/* Кнопки */
+md-text-button {
+    --md-sys-color-primary: var(--md-sys-color-secondary);
+    color: var(--md-sys-color-on-secondary);
+}
+
+md-outlined-button {
+    --md-outlined-button-container-color: var(--md-sys-color-tertiary-container);
+    --md-outlined-button-outline-color: var(--md-sys-color-tertiary);
+    --md-outlined-button-label-text-color: var(--md-sys-color-on-tertiary-container);
+}
+
+
+/* Скрытие меню */
+.hidden {
+    display: none !important;
+}

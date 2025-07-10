@@ -1,0 +1,36 @@
+:root {
+    --md-sys-color-primary: #8b5e3c; /* Тёплый коричневый */
+    --md-sys-color-on-primary: #FFFFFF; /* Белый текст */
+    --md-sys-color-primary-container: #D7BFA7; /* Светлый песочный */
+    --md-sys-color-on-primary-container: #3D2A1A; /* Тёмный коричневый */
+
+    --md-sys-color-secondary: #A67C52; /* Светлый ореховый */
+    --md-sys-color-on-secondary: #FFFFFF;
+    --md-sys-color-secondary-container: #F2E0C9; /* Молочный */
+    --md-sys-color-on-secondary-container: #4E3825;
+
+    --md-sys-color-tertiary: #B6895F; /* Карамельный */
+    --md-sys-color-on-tertiary: #FFFFFF;
+    --md-sys-color-tertiary-container: #F3DFC7; /* Светлый беж */
+    --md-sys-color-on-tertiary-container: #5A3B25;
+
+    --md-sys-color-background: #F8F3EE; /* Тёплый белый */
+    --md-sys-color-on-background: #3E2C21; /* Глубокий коричневый */
+
+    --md-sys-color-surface: #EFE7E1; /* Бежево-молочный */
+    --md-sys-color-on-surface: #4B3728; /* Тёмно-коричневый */
+
+    --md-sys-color-outline: #A68A72; /* Светло-коричневый */
+}
+
+.row {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    place-items: center;
+    gap: 4px;
+}
+
+.hidden {
+    display: none !important;
+}
