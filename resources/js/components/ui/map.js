@@ -36,7 +36,13 @@ if (categories){}
 //////////////////////////
 // Инициализация карты. //
 //////////////////////////
-window.map = L.map('map').setView([57.029, 37.321], 6);
+window.map = L.map('map',{
+    center:         [57.029, 37.321],
+    zoom:           6,
+    }
+)
+
+
 
 // Создаём объект групирующий тэги.
 window.markers = L.markerClusterGroup();
@@ -49,6 +55,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // А эта в цикле перебирает JSON и расчерчивает //
+//                             ..дороги из мефа //
 export async function print_tags(){
     const tags = await get_tags();          // Забираем теги.
 

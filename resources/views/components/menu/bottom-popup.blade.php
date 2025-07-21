@@ -8,7 +8,7 @@
   <div class="bottom-popup hidden" id="bottom-popup">
     <div class="row">
       <h6 id="marker-info"></h6>
-      <button id="bottom-popup-close-btn">X</button>
+      <md-filled-tonal-icon-button id="bottom-popup-close-btn"><md-icon>close</md-icon></md-filled-tonal-icon-button>
     </div>
     <div class="row">
       <h5 id="marker-date"></h5>
